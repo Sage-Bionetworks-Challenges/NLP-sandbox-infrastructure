@@ -316,3 +316,13 @@ python scripts/toggle_queue.py close
 # This will give submit permissions for the NLP sandbox users
 python scripts/toggle_queue.py open
 ```
+
+### Add centers/datasets
+
+When we add centers and their datasets, use this [code](scripts/add_center.py). The steps are:
+
+1. Create center Synapse service account?
+1. Create internal queues
+1. Add to configuration table
+1. Make sure orchestrator configured to accept submissions from internal queues {"queue_id": "syn25582656"...}
+1. Add to submission view
